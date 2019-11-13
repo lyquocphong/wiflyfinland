@@ -21,12 +21,42 @@ class Auth extends CI_Controller {
 	public function index()
 	{
 		$data = array(
- 
-			'title' => 'Phong edited',
-			'msg' => '123'
-             
+ 			'title' => 'Login'             
         );
-         
-        $this->template->load('default', 'login', $data);
+		$this->load->model('blog_model','test_model');
+		var_dump($this->test_model->get_last_ten_entries());
+
+        //$this->template->load('default', 'login', $data);
+	}
+
+	public function login()
+	{
+		$config = array(
+			array(
+					'field' => 'username',
+					'label' => 'Username',
+					'rules' => 'required'
+			),
+			array(
+					'field' => 'password',
+					'label' => 'Password',
+					'rules' => 'required',
+					'errors' => array(
+							'required' => 'You must provide a %s.',
+					),
+			)
+		);
+		
+		$this->form_validation->set_rules($config);
+
+		if ($this->form_validation->run() == FALSE)
+		{
+				$this->index();
+		}
+		else
+		{
+				echo 'Success';
+		}
+		
 	}
 }
