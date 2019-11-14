@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Auth extends CI_Controller {
+class Auth extends MY_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -19,14 +19,11 @@ class Auth extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index()
-	{
+	{		
 		$data = array(
- 			'title' => 'Login'             
-        );
-		$this->load->model('blog_model','test_model');
-		var_dump($this->test_model->get_last_ten_entries());
-
-        //$this->template->load('default', 'login', $data);
+			'title' => 'Login'
+	    );
+		$this->render('login', $data);
 	}
 
 	public function login()

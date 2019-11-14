@@ -1,27 +1,18 @@
-<div class="w-full max-w-xs mx-auto my-8">
-  <form method="POST" action="/auth/login" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-    <div class="mb-4">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-        Username
-      </label>
-      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+<div class="login-wrapper">
+  <form method="POST" action="/auth/login" class="login-form">
+    <div class="form-row">
+      <img class="logo" src="http://wiflyfinland.edu.vn/upload/hinhanh/logo-chinh-sua-lan-2-7873.png" alt="Logo">      
     </div>
-    <div class="mb-6">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
-        Password
-      </label>
-      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************">      
+    <div class="form-row">
+      <input class="txt-input" id="username" type="text" placeholder="Username">
     </div>
-    <div class="flex items-center justify-between">
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-        Sign In
+    <div class="form-row">
+      <input class="txt-input" id="password" type="password" placeholder="Password">      
+    </div>
+    <div class="form-row submit-row">
+      <button class="btn" type="submit">
+        Login
       </button>
-      <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
-        Forgot Password?
-      </a>
     </div>
   </form>
-  <p class="text-center text-gray-500 text-xs">
-    &copy;2019 Wifly Finland. All rights reserved.
-  </p>
 </div>

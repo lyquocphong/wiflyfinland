@@ -15,29 +15,8 @@ class Template
     function load($tpl_view, $body_view = null, $data = null) 
     {
         if ( ! is_null( $body_view ) ) 
-        {
-            if ( file_exists( APPPATH.'views/'.$tpl_view.'/'.$body_view ) ) 
-            {
-                $body_view_path = $tpl_view.'/'.$body_view;
-            }
-            else if ( file_exists( APPPATH.'views/'.$tpl_view.'/'.$body_view.'.php' ) ) 
-            {
-                $body_view_path = $tpl_view.'/'.$body_view.'.php';
-            }
-            else if ( file_exists( APPPATH.'views/'.$body_view ) ) 
-            {
-                $body_view_path = $body_view;
-            }
-            else if ( file_exists( APPPATH.'views/'.$body_view.'.php' ) ) 
-            {
-                $body_view_path = $body_view.'.php';
-            }
-            else
-            {
-                show_error('Unable to load the requested file: ' . $tpl_view.'/'.$body_view.'.php');
-            }
-             
-            $body = $this->ci->load->view($body_view_path, $data, TRUE);
+        {             
+            $body = $this->ci->load->view($body_view, $data, TRUE);
              
             if ( is_null($data) ) 
             {

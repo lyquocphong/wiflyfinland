@@ -1,0 +1,124 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END-RESET-CSS */
+
+.login-wrapper {
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgb(0, 153, 255) 0%, rgb(255, 255, 255) 100%);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    min-height: 200px;
+    background: #fff;
+    float: left;    
+    padding: 40px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.login-form .logo {    
+    max-width: 180px !important;
+    max-height: 120px !important;
+}
+
+.login-form .form-row {    
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+}
+
+.login-form .txt-input {
+    height: 48px;    
+    margin: 5px 0px;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #a39e9e;
+    padding: 0;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    box-shadow: none;
+    border-radius: 0px;
+    outline: none;
+}
+
+.login-form .txt-input:focus {
+    border-bottom: 2.5px solid #a39e9e;
+}
+
+.login-form .submit-row {    
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    display: block;
+    background: hsl(86, 76%, 71%);
+    color: white;
+    text-decoration: none;    
+    border-radius: 5px;
+    height: 48px;
+    background: #009cff;
+    font-size: 20px;
+    padding: 11px;
+}
