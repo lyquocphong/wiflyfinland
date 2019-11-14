@@ -521,3 +521,17 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+/*
+|--------------------------------------------------------------------------
+| Extra Javascript file to add to view
+|--------------------------------------------------------------------------
+*/
+$config['extra_js'] = array('https://code.jquery.com/jquery-3.4.1.min.js');
+
+/*
+|--------------------------------------------------------------------------
+| Extra CSS file to add to view
+|--------------------------------------------------------------------------
+*/
+$config['extra_css'] = array('assets/css/common.css');

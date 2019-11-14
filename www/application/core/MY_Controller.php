@@ -7,7 +7,9 @@ class MY_Controller extends CI_Controller
   protected $view = array(
       'template' => 'default',
       'data' => [
-          'title' => 'My CodeIgniter App'
+          'title' => 'My CodeIgniter App',
+          'extra_js' => [],
+          'extra_css' => []
       ]
   );
   

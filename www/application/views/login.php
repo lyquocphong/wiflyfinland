@@ -1,3 +1,7 @@
+<?php
+  add_css('assets/css/login.css');
+?>
+
 <div class="login-wrapper">
   <form method="POST" action="/auth/login" class="login-form">
     <div class="form-row">
