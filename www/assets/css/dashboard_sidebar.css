@@ -1,0 +1,71 @@
+.sidebar header {
+    background-color: white;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.sidebar header .logo {
+    max-width: 60% !important;
+    max-height: 40px !important;
+}
+
+.sidebar-nav {        
+    height: 100vh;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav ul li {    
+    width: 100%;
+    border-bottom: 1px solid #272A34;
+}
+
+li.active::after {
+    content: '';
+    width: 15px;
+    background-color: orange;
+}
+
+.sidebar-nav ul li i {
+    font-size: 1.8em;
+    padding-right: 0.5em;
+    width: 9em;
+    display: inline;
+    vertical-align: middle;
+}
+
+.sidebar-nav ul li a {
+    color: #fff;
+    font-size: 14px;
+    padding: 1.05em 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    font-family: roboto-b;
+    /*  */
+    /* color: rgba(255, 255, 255, 0.9);
+    /* color: #272A34; */
+    /* font-size: 0.75em;
+    padding: 1.05em 1em;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    font-size: 13px; */
+    /*  */
+}
+
+.sidebar-nav ul li a:hover {
+    /* background-color: rgba(0,0,0,0.9); */
+    /* background: #009cff; */    
+    /* border-bottom: 6px solid #01accd; */
+    background: #01accd;
+}

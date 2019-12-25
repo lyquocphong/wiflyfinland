@@ -1,0 +1,38 @@
+.dashboard-wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+                "sidebar header"
+                "sidebar content"
+                "sidebar footer";
+    color: #272a34;
+    font-size: 14px;
+    font-family: 'Muli', Arial, sans-serif;
+    font-weight: 200;
+}
+
+.dashboard-sidebar {
+    grid-area: sidebar;
+    /* background: #272A34; */
+    /* background: #009cff; */
+    background: #003580;
+    box-shadow: inset -1px 0px 0px 0px #9e9684;
+}
+
+.dashboard-content {
+    grid-area: content;
+    /* background: #f1ede4; */
+    background: #f1ede4;
+}
+
+.dashboard-header {
+    grid-area: header;
+    background: #272a34;
+}
+
+.dashboard-footer {
+    grid-area: footer;
+    background: #272a34; 
+}
